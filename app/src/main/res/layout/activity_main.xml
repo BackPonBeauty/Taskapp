@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+
+    tools:context=".MainActivity">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listView1"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginStart="293dp"
+        android:layout_marginTop="21dp"
+        android:src="@drawable/plus"
+        app:backgroundTint="@color/colorPrimary" />
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="365dp"
+        android:layout_below="@+id/serchview1"
+        android:layout_marginTop="6dp">
+
+
+    </ListView>
+
+    <SearchView
+        android:id="@+id/serchview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:iconifiedByDefault="false"
+        android:queryHint="検索">
+
+    </SearchView>
+
+</RelativeLayout>
